@@ -65,7 +65,7 @@ Attention: ensure that your wireless network device name contains "wlan".
 
 ![Alt text](image.png)
 
-You just run following commands to expolit:
+You just run following commands to exploit:
 ```
 npm i
 npm start
