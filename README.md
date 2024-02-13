@@ -10,6 +10,10 @@ Github url: https://github.com/msolters/wifi-control-node
 
 Vulnerable version: <= 2.0.1
 
+CVE: CVE-2023-50632
+
+The response of CVE Assignment Team is in [Re_ [scr1570159] your CVE ID requests.eml](https://github.com/sdpyly/bug_report_wifi-control/blob/master/Re_%20%5Bscr1570159%5D%20your%20CVE%20ID%20requests.eml)
+
 Vulnerable file: lib/linux.js
 ```js
 connectToAP: function(_ap) {

